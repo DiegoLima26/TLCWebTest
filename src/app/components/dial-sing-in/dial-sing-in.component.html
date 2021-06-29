@@ -1,0 +1,21 @@
+<div class="classSesion">
+    <h1 mat-dialog-title>Inicio De Sesión</h1>
+    <mat-dialog-content class="contDialogo">
+        <div class="contSesInicio">
+            <img src="assets/Imagenes/tlcLogoSmall.png" class="logoSesion" alt="Logo TLC">
+            <h1>Ingrese Aqui</h1>
+            <form>
+              <label for="username">Username</label>
+              <input type="text" placeholder="Ingrese el Ususario">
+              <label for="password">Password</label>
+              <input type="password" placeholder="Ingrese su contraseña">
+              <a>Olvidaste tu contraseña?</a><br>
+              <a>No tienes una cuenta?</a>
+            </form>
+          </div>
+    </mat-dialog-content>
+    <mat-dialog-actions>
+    <button mat-button [mat-dialog-close]="false">Cancelar</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Iniciar Sesión</button>
+    </mat-dialog-actions>
+</div>

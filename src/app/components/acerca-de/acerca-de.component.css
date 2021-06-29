@@ -1,0 +1,240 @@
+@font-face 
+{
+    font-family: "Helvetica-Rounded";
+    src: url(../../../fonts/Helvetica-Rounded.otf);
+}
+@font-face 
+{
+    font-family: "futura-light-bt";
+    src: url(../../../fonts/futura-light-bt.ttf);
+}
+/*-------------- Clases para el div principal (clasAcerca) -----------------*/
+.clasAcerca
+{
+  margin:0px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(250, 248, 245);
+}
+.textoAcerca
+{
+  margin: 0px;
+  background-color: rgb(250, 248, 245);
+  box-sizing: border-box;
+}
+.textoAcerca > h1
+{
+  margin: 0px;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  text-align:left;
+  color: rgb(5, 4, 85);
+  font-family: futura-light-bt;
+  font-size: 50px;
+  font-weight:700;
+  letter-spacing: 8px;
+}
+/*-------------- Fin clases para el div principal (clasAcerca) -------------*/
+
+/*-------------- Clases para el div (gridContainer) -----------------*/
+
+.gridContAcerca
+{
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  background-color: rgb(250, 248, 245);
+}
+
+/*-------------- Fin clases para el div (gridContainer) -------------*/
+
+/*-------------- Clases para el div (grilla) -----------------*/
+.grilla1
+{
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+}
+.tituloContenido
+{
+  width: 80%;
+  margin: 0 auto;
+  padding:30px 10px 15px 10px;
+
+  border-bottom: 1px solid rgb(5, 4, 85);
+}
+.tituloContenido > h1
+{
+  margin: 0px;
+  color: rgb(5, 4, 85);
+  font-size: 35px;
+  font-weight: 700;
+  font-family: futura-light-bt;
+}
+.cuerpoContenido
+{
+  width: 80%;
+  margin: 0px auto;
+  padding: 30px 20px 30px 20px;
+}
+.cuerpoContenido > p
+{
+  margin: 0px;
+  color: rgb(97, 97, 100);
+  font-size: 14px;
+  font-family: futura-light-bt;
+  line-height: 28px;
+}
+/*-------------- Fin clases para el div (grilla) -------------*/
+
+/*-------------- Clases para el div (grilla2) -----------------*/
+.grilla2
+{
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: rgb(245, 245, 245);
+  border-radius: 15px;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+}
+.grilla2 img
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+/*-------------- Fin clases para el div (grilla2) -------------*/
+
+
+/*----------------------- Inicio estilos css para estilos responsivos ---------------------*/
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 0px y maximo de 400px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 400px) 
+{
+    /*-------------- Clases para el div principal (clasAcerca) -----------------*/
+    .textoAcerca > h1
+    {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 25px;
+        text-align:left;
+        color: rgb(5, 4, 85);
+        font-family: futura-light-bt;
+        font-size: 32px;
+        font-weight:700;
+        letter-spacing: 4px;
+    }
+    /*-------------- Fin clases para el div principal (clasAcerca) -------------*/
+    /*-------------- Clases para el div (gridContainer) -----------------*/
+    .gridContAcerca
+    {
+        margin: 0px;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        background-color: rgb(250, 248, 245);
+        display: flex;
+        flex-direction: column;
+    }
+    /*-------------- Fin clases para el div (gridContainer) -------------*/
+    /*-------------- Clases para el div (grilla) -----------------*/
+    .grilla1
+    {
+        display: block;
+        border-radius: 10px;
+    }
+    .tituloContenido
+    {
+        width: 90%;
+        margin: 0 auto;
+        padding:15px 10px 15px 10px;
+    }
+    .tituloContenido > h1
+    {
+        margin: 0px;
+        font-size: 26px;
+    }
+    .cuerpoContenido
+    {
+        width: 90%;
+        padding: 20px 20px 20px 20px;
+    }
+    .cuerpoContenido > p
+    {
+        font-size: 13px;
+        line-height: 25px;
+    }
+    /*-------------- Fin clases para el div (grilla) -------------*/
+}
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 0px y maximo de 400px!!!!!!!!!!!-------*/
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 401px y maximo de 767px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 767px) and (min-width: 401px)
+{
+  /*-------------- Clases para el div principal (clasAcerca) -----------------*/
+  .textoAcerca > h1
+  {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 40px;
+    font-size: 45px;
+    font-weight:700;
+    letter-spacing: 6px;
+  }
+  /*-------------- Fin clases para el div principal (clasAcerca) -------------*/
+  /*-------------- Clases para el div (gridContainer) -----------------*/
+  .gridContAcerca
+  {
+    margin: 0px;
+    width: 100%;
+    padding: 20px 30px 20px 30px;
+    box-sizing: border-box;
+    background-color: rgb(250, 248, 245);
+    display: flex;
+    flex-direction: column;
+  }
+  /*-------------- Fin clases para el div (gridContainer) -------------*/
+  /*-------------- Clases para el div (grilla) -----------------*/
+  .grilla1
+  {
+    display: block;
+    border-radius: 15px;
+  }
+  .tituloContenido
+  {
+    width: 80%;
+    margin: 0 auto;
+    padding:25px 20px 25px 20px;
+  }
+  .tituloContenido > h1
+  {
+      margin: 0px;
+      font-size: 30px;
+  }
+  .cuerpoContenido
+  {
+      width: 80%;
+      padding: 30px;
+  }
+  .cuerpoContenido > p
+  {
+      font-size: 15px;
+      line-height: 25px;
+  }
+  /*-------------- Fin clases para el div (grilla) -------------*/
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 0px y maximo de 767px!!!!!!!!!!!-------*/
+
+
+/*----------------------- Fin estilos css para estilos responsivos ---------------------*/

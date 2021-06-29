@@ -1,0 +1,43 @@
+img 
+{
+  width: 100%; /* need to overwrite inline dimensions */
+  height: 100%;
+}
+.tamaño-tarjeta 
+{
+  width: 300px;
+  height: 400px;    
+}
+.color-fondo 
+{
+  color: #020a13;
+  background-color: rgb(229, 226, 231); 
+}
+.container
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+.pos-lista 
+{
+  position: relative;
+}
+.pos-imagen 
+{
+  line-height: 10;
+  /*overflow: hidden;*/
+}
+
+.pos-imagen img 
+{
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+.cabezaTab
+{  
+  padding: 10px;  
+  left: 0;
+  right: 0;
+}

@@ -1,0 +1,97 @@
+@font-face 
+{
+    font-family: "Helvetica";
+    src: url(../../../fonts/Helvetica.ttf);
+}
+@font-face 
+{
+    font-family: "Helvetica-Bold";
+    src: url(../../../fonts/Helvetica-Bold.ttf);
+}
+@font-face 
+{
+    font-family: "Helvetica-Rounded";
+    src: url(../../../fonts/Helvetica-Rounded.otf);
+}
+@font-face 
+{
+    font-family: "futura-light-bt";
+    src: url(../../../fonts/futura-light-bt.ttf);
+}
+@font-face 
+{
+    font-family: "futura-Bk-BT";
+    src: url(../../../fonts/Futura-Bk-BT.ttf);
+}
+/*¡¡¡¡¡¡¡------- Codigo para el div principal del menu lateral  (dvi=menuLateral) -------!!!!!!!*/
+
+.menuLateral
+{
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.headercabeza 
+{
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(245, 124, 0);
+}
+.headercabeza h1
+{
+    margin: 0;
+    width: 100%;
+    font-size: 25px;
+    font-family:futura-light-bt;
+    font-weight: 700;
+    color: rgb(9, 9, 43);
+}
+
+.full-height 
+{
+    width: 100%;
+    position: relative;
+    background-color: rgb(245, 245, 245);
+}
+.full-height mat-sidenav
+{
+    background-color: rgb(215, 215, 215);
+    color: rgb(9, 9, 43);
+}
+.padded 
+{
+    padding: 10px;
+    position: static;
+}
+.with-icon 
+{
+    display: flex;
+    align-items: center;
+}
+.example-container 
+{
+    display: flex;
+    flex-direction: column;
+    position: static;
+}
+
+.ventanaProductos
+{
+    width: 100%;
+    position: static;
+}
+.contenidoP 
+{
+    padding: 0px;
+    position: static;
+}
+.contenidoP::-webkit-scrollbar{
+    width: 8px;
+    background:rgb(204, 200, 194);
+}
+.contenidoP::-webkit-scrollbar-thumb{
+    background: rgb(245, 124, 0);
+    border-radius: 6px;
+}

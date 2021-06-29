@@ -1,0 +1,161 @@
+
+@font-face 
+{
+    font-family: "Helvetica-Rounded";
+    src: url(../../../fonts/Helvetica-Rounded.otf);
+}
+@font-face 
+{
+    font-family: "futura-light-bt";
+    src: url(../../../fonts/futura-light-bt.ttf);
+}
+
+/*¡¡¡¡¡¡¡------- Codigo para el div principal (classProductos) -------!!!!!!!*/
+
+.classPrductos
+{
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/*¡¡¡¡¡¡¡------- Fin codigo para el div principal (classProductos) -------!!!!!!!*/
+
+
+/*¡¡¡¡¡¡¡------- Codigo para el div con el titulo (headerProductos) -------!!!!!!!*/
+
+.headerProductos
+{
+    margin: 0px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(245, 124, 0);
+}
+.headerProductos > h1
+{
+    margin: 0px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: futura-light-bt;
+    color: rgb(9, 9, 43);
+}
+
+/*¡¡¡¡¡¡¡------- Fin codigo para el div con el titulo (headerProductos) -------!!!!!!!*/
+
+
+
+/*¡¡¡¡¡¡¡------- Codigo para el div que contiene el menu y los productos (contProdNav) -------!!!!!!!*/
+
+.contProdNav
+{
+    margin: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(250, 248, 245);
+}
+
+/*¡¡¡¡¡¡¡------- Fin codigo para el div que contiene el menu y los productos (contProdNav) -------!!!!!!!*/
+
+
+/*¡¡¡¡¡¡¡------- Codigo para el div que contiene el menu (contProdNav-N) -------!!!!!!!*/
+
+.contProdNav-N
+{
+    margin: 0px;
+    width: 20%;
+    box-sizing: border-box;
+    background-color: rgb(250, 248, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categoriaProductos
+{
+    display: block;
+    margin: 10px auto;
+    box-sizing: border-box;
+    border-radius: 15px;
+	width: 90%;
+	padding: 15px 0;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: futura-light-bt;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(5, 4, 85);
+	background-color: rgb(245, 245, 245);
+    cursor: pointer;
+}
+.categoriaProductosSeleccion
+{
+    background-color: rgba(21, 21, 21, 0.295);
+}
+
+/*¡¡¡¡¡¡¡------- Fin codigo para el div que contiene el menu (contProdNav-N) -------!!!!!!!*/
+
+
+/*¡¡¡¡¡¡¡------- Codigo para el div que contiene los productos (contProdNav-P) -------!!!!!!!*/
+
+.contProdNav-P
+{
+    margin: 0px;
+    width: 80%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(250, 248, 245);
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-gap: 15px;
+}
+.posContProd
+{
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    position: static;
+    width: 300px;
+    height: 400px; 
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    transition: all .4s;
+}
+.tarjetaImagen
+{
+    width: 100%;
+    height: 350px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.tarjetaImagen img
+{
+    width: 100%;
+    object-fit: cover;
+}
+.pieTarjeta
+{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.pieTarjeta p
+{
+    margin: 0px;
+    padding: 10px;
+    color: rgb(5, 4, 85);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: futura-light-bt;
+}
+
+/*¡¡¡¡¡¡¡------- Fin codigo para el div que contiene los productos (contProdNav-P) -------!!!!!!!*/
+
+
+
+
+/*¡¡¡¡¡¡¡------- Codigo para el div que contiene los productos (contProdNav-P) -------!!!!!!!*/
+/*¡¡¡¡¡¡¡------- Fin codigo para el div que contiene los productos (contProdNav-P) -------!!!!!!!*/

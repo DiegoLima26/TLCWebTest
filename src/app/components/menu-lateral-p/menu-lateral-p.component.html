@@ -1,0 +1,18 @@
+<div class="menuLateral">
+  <div class="headercabeza">
+      <h1>Lista de Productos:<span style="color:rgb(9, 9, 43);"> aqui poner categoria. </span></h1>
+  </div>
+  <mat-sidenav-container class="full-height">
+    <mat-sidenav mode="side" opened (click)="toggleSidebar()">
+      <div mat-menu-item *ngFor="let i of sideMenu" [routerLink]="[i.route]" class="with-icon padded" (click)="$event.stopPropagation()">
+          <mat-icon [matTooltip]="i.toolTip">{{ i.icon }}</mat-icon>&nbsp;
+          <span [hidden]="collapse">{{ i.name }}</span>
+      </div>
+    </mat-sidenav>
+    <mat-sidenav-content class="contenidoP">
+      <div class="ventanaProductos">
+          <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

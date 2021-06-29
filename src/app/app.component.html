@@ -1,0 +1,409 @@
+<div class="banerLateral">
+    <div class="slideBaner">
+        <div class="centraT">
+            <p class="botonIz"><</p>
+            <h1>TLC SRL Comunicaciones</h1>
+            <p class="botonDer">></p>
+        </div>
+        <ul class="banerLateralListaU">
+            <li id="baner1" class="styleLista">
+                <img src="assets/ImgBaner/baner1.png" class="imgLista" alt="foto 1"/>
+            </li>
+            <li id="baner2" class="styleLista">
+                <img src="assets/ImgBaner/baner2.png" class="imgLista" alt="foto 2"/>
+            </li>
+            <li id="baner3" class="styleLista">
+                <img src="assets/ImgBaner/baner3.png" class="imgLista" alt="foto 3"/>
+            </li>
+            <li id="baner4" class="styleLista">
+                <img src="assets/ImgBaner/baner4.png" class="imgLista" alt="foto 4"/>
+            </li>
+            <li id="baner5" class="styleLista">
+                <img src="assets/ImgBaner/baner5.png" class="imgLista" alt="foto 5"/>
+            </li>
+            <li id="baner6" class="styleLista">
+                <img src="assets/ImgBaner/baner6.png" class="imgLista" alt="foto 6"/>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="classCabFija">
+    <nav class="menuVertical" id="menuV">
+        <div class="contMenuBtnResp">
+			<button id="btnMenuResp" class="btnMenuResp" title="Menu">
+                <mat-icon class="huella">menu</mat-icon>
+            </button>
+			<div class="inicioSesionResp">
+                <button class="btnMenuLogInResp" title="Iniciar Sesión">
+                    <mat-icon class="huella">perm_identity</mat-icon>
+                </button>
+            </div>
+		</div>
+        <div class="contBtnNavegacion">
+            <div class="logo">
+                <img alt="Logo TLC" src="assets/Imagenes/tlcLogoSmall.png"/> 
+            </div>
+			<div class="btnProductos" id="btnProductos">
+				<p>Todos los <span>Productos</span></p>
+				<mat-icon class="huella">expand_more</mat-icon>
+			</div>
+			<ul class="linkMenu">
+				<li><a (click)="mostrarPagina('pag-inicio')">INICIO</a></li>
+                <li><a (click)="mostrarPagina('pag-servicios')">SERVICIOS</a></li>
+                <li><a (click)="mostrarPagina('pag-contactos')">CONTACTOS</a></li>
+                <li><a (click)="mostrarPagina('pag-acerca-de')">ACERCA DE</a></li>
+            </ul>
+            <div class="inicioSesion">
+                <button class="btnMenuLogIn" title="Iniciar Sesión">
+                    <mat-icon class="huella">perm_identity</mat-icon>
+                </button>
+            </div>
+		</div>
+        <div class="contSubMenuGrid">
+            <div class="contRejilla" id="contRejGrid">
+                <div class="catGrid">
+                    <button class="btnGridBack" title="Regresar">
+                        <mat-icon class="huella">arrow_back</mat-icon>Regresar
+                    </button>
+                    <h2 class="tituloResp">Categorias</h2>
+
+                    <a class="linkCatProd" catProdTienda="fibraOptica">Fibra Optica <mat-icon class="huella1">chevron_right</mat-icon> </a>
+                    <a class="linkCatProd" catProdTienda="conectOptica">Conectividad Optica <mat-icon class="huella1">chevron_right</mat-icon></a>
+                    <a class="linkCatProd" catProdTienda="instInternas">Instalaciones Internas <mat-icon class="huella1">chevron_right</mat-icon></a>
+                    <a class="linkCatProd" catProdTienda="instExternas">Instalaciones Externas <mat-icon class="huella1">chevron_right</mat-icon></a>
+                    <a class="linkCatProd" catProdTienda="equipOpticos">Equipos <mat-icon class="huella1">chevron_right</mat-icon></a>
+                    <a class="linkCatProd" catProdTienda="herraGenerales">Herramientas <mat-icon class="huella1">chevron_right</mat-icon></a>
+                    <a class="linkCatProd" catProdTienda="prodLimpieza">Productos De Limpieza <mat-icon class="huella1">chevron_right</mat-icon></a>
+                </div>
+                <div class="subCatGrid">
+                    <div class="subCatGridItem " catProdTienda="fibraOptica">
+                        <div class="linkSubCategoria">
+                            <button class="btnGridBackSub" title="Regresar">
+                                <mat-icon class="huella">arrow_back</mat-icon>Regresar
+                            </button>
+                            <h2 class="subTituloMenu">Fibra Optica</h2>
+                            <a (click)="mostrarPagina('appProdtest1')">Fibra Optica Monomodo</a>
+                            <a>Fibra Optica Multimodo</a>
+                            <a>Fibra Optica Drop</a>
+                        </div>
+                        <div class="banerSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerFibra">
+                            </a>
+                        </div>
+                        <div class="galeriaSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra1.png" alt="galeriaFibra1">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaFibra2">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra3.png" alt="galeriaFibra3">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra4.png" alt="galeriaFibra4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subCatGridItem" catProdTienda="conectOptica">
+                        <div class="linkSubCategoria">
+                            <button class="btnGridBackSub" title="Regresar">
+                                <mat-icon class="huella">arrow_back</mat-icon>Regresar
+                            </button>
+                            <h2 class="subTituloMenu">Conectividad Optica</h2>
+                            <a (click)="mostrarPagina('appProdtest1')">Acopladores Opticos</a>
+                            <a>Patch Core</a>
+                            <a>Pigtails</a>
+                            <a>Splitters</a>
+                            <a>Conectores Rapidos</a>
+                        </div>
+                        <div class="banerSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerConOptica">
+                            </a>
+                        </div>
+                        <div class="galeriaSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra1.png" alt="galeriaConOptica1">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaConOptica2">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra3.png" alt="galeriaConOptica3">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra4.png" alt="galeriaConOptica4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subCatGridItem" catProdTienda="instInternas">
+                        <div class="linkSubCategoria">
+                            <button class="btnGridBackSub" title="Regresar">
+                                <mat-icon class="huella">arrow_back</mat-icon>Regresar
+                            </button>
+                            <h2 class="subTituloMenu">Instalaciones Internas</h2>
+                            <a (click)="mostrarPagina('appProdtest1')">Racks</a>
+                            <a>Bandejas ODF</a>
+                            <a>Cajas De Distribucion FTTH</a>
+                            <a>Rocetas</a>
+                        </div>
+                        <div class="banerSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerinstInt">
+                            </a>
+                        </div>
+                        <div class="galeriaSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra1.png" alt="galeriainstInt1">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriainstInt2">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra3.png" alt="galeriainstInt3">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra4.png" alt="galeriainstInt4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subCatGridItem" catProdTienda="instExternas">
+                        <div class="linkSubCategoria">
+                            <button class="btnGridBackSub" title="Regresar">
+                                <mat-icon class="huella">arrow_back</mat-icon>Regresar
+                            </button>
+                            <h2 class="subTituloMenu">Instalaciones Externas</h2>
+                            <a>Muflas</a>
+                            <a>Bandejas Para Ampliación</a>
+                            <a>Cto-NAP</a>
+                            <a>Ferreteria</a>
+                        </div>
+                        <div class="banerSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerConOptica">
+                            </a>
+                        </div>
+                        <div class="galeriaSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra1.png" alt="galeriaConOptica1">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaConOptica2">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra3.png" alt="galeriaConOptica3">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra4.png" alt="galeriaConOptica4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subCatGridItem" catProdTienda="equipOpticos">
+                        <div class="linkSubCategoria">
+                            <button class="btnGridBackSub" title="Regresar">
+                                <mat-icon class="huella">arrow_back</mat-icon>Regresar
+                            </button>
+                            <h2 class="subTituloMenu">Equipos</h2>
+                            <a>OTDR</a>
+                            <a>Fusionadora</a>
+                            <a>Media Converter</a>
+                            <a>Medicion De Potencia</a>
+                            <a>Kit De Herramientas</a>
+                        </div>
+                        <div class="banerSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerConOptica">
+                            </a>
+                        </div>
+                        <div class="galeriaSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra1.png" alt="galeriaConOptica1">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaConOptica2">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra3.png" alt="galeriaConOptica3">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra4.png" alt="galeriaConOptica4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subCatGridItem" catProdTienda="herraGenerales">
+                        <div class="linkSubCategoria">
+                            <button class="btnGridBackSub" title="Regresar">
+                                <mat-icon class="huella">arrow_back</mat-icon>Regresar
+                            </button>
+                            <h2 class="subTituloMenu">Herramientas</h2>
+                            <a>Para Corte</a>
+                            <a>Para Medir</a>
+                            <a>Para Pelar</a>
+                            <a>Termocontraibles</a>
+                        </div>
+                        <div class="banerSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerConOptica">
+                            </a>
+                        </div>
+                        <div class="galeriaSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra1.png" alt="galeriaConOptica1">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaConOptica2">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra3.png" alt="galeriaConOptica3">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra4.png" alt="galeriaConOptica4">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="subCatGridItem" catProdTienda="prodLimpieza">
+                        <div class="linkSubCategoria">
+                            <button class="btnGridBackSub" title="Regresar">
+                                <mat-icon class="huella">arrow_back</mat-icon>Regresar
+                            </button>
+                            <h2 class="subTituloMenu">Productos De Limpieza</h2>
+                            <a>Cotonetes</a>
+                            <a>Limpiador De Acopladores</a>
+                            <a>Paños</a>
+                            <a>Alcohol Isopropilico</a>
+                        </div>
+                        <div class="banerSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/banerSubMenuFibra.png" alt="banerConOptica">
+                            </a>
+                        </div>
+                        <div class="galeriaSubCategoria">
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra1.png" alt="galeriaConOptica1">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra2.png" alt="galeriaConOptica2">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra3.png" alt="galeriaConOptica3">
+                            </a>
+                            <a>
+                                <img src="assets/ImgMenuProductos/subMenuGaleriaFibra4.png" alt="galeriaConOptica4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedorLogIn">
+            <div class="cuerpologIn">
+                <div class="datosLogin">
+                    <img src="assets/Imagenes/tlcLogoSmall.png" alt="Logo TLC">
+                    <div class="tituloDatosLog">
+                        <h1>Inicio de Sesión</h1>
+                    </div>
+                    <div class="cuerpoDatosLog">
+                        <h2>Nombre:</h2>
+                        <input type="text" placeholder="Nombre De usuario" required>
+                        <h2>Contraseña:</h2>
+                        <input type="password" placeholder="Contraseña" required>
+                        <a class="botonInicio">Ingresar</a>
+                        <a class="linkOpc">Olvidaste tu contraseña?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="mainclass">
+      <router-outlet></router-outlet> 
+    </main>
+</div>
+<footer class="classFooter">
+    <div class="infFooter">
+        <div class="infRedesS">
+            <div class="cabezaRedes">
+                <h1>Acerca de nosotros :</h1>
+            </div>
+            <div class="cuerpoRedes">
+                <p>Puedes saber mas de nosotros y de lo que hacemos visitando una de nuestras redes sociales.</p>
+                <div class="clasBotones">
+                    <button  onClick="window.open('//angular.io/guide/animations')" title="facebook">
+                        <!-- <mat-icon class="huella">facebook</mat-icon> -->
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </button> 
+                    <button  onClick="window.open('//angular.io/guide/animations')" title="Youtube">
+                        <!-- <mat-icon class="huella">smart_display</mat-icon> -->
+                        <i class="fab fa-youtube fa-2x"></i>
+                    </button> 
+                    <button onClick="window.open('//angular.io/guide/animations')" title="Twiter">
+                        <!-- <mat-icon class="huella">stay_current_portrait</mat-icon> -->
+                        <i class="fab fa-twitter fa-2x"></i>
+                    </button> 
+                    <button  onClick="window.open('//angular.io/guide/animations')" title="Instagram">
+                        <!-- <mat-icon class="huella">add_a_photo</mat-icon> -->
+                        <i class="fab fa-instagram fa-2x"></i>
+                    </button> 
+                </div>
+            </div>
+        </div>
+        <div class="infDir">
+            <div class="cabezaRedes">
+                <h1>Nuestras direcciones :</h1>
+            </div>
+            <div class="cuerpoRedes">
+                <h2>Direccion oficina central:</h2>
+                <p>Av. Uruguay #471 entre Av.Montes y Perú (cerca Terminal de Buses)</p>
+                <p>La Paz - Bolivia</p>
+                <h2>Contactos:</h2>
+                <p>Telefono: +591-2-2282563</p>
+                <p>Celular: +591-73008000</p>
+                <h2>Direccion oficina sucursal:</h2>
+                <p>C. Jose Antonio Zegada #16 entre C.Lucas Mendoza y Alcides Arguedas</p>
+                <p>Cochabamba - Bolivia</p>
+                <h2>Contactos:</h2> 
+                <p>Telefono: +591-4-4444444</p>
+                <p>Celular: +591-72535453</p>
+            </div>
+        </div>
+        <div class="infCot">
+            <div class="cabezaRedes">
+                <h1>Contactanos para una cotizacion :</h1>
+            </div>
+            <div class="cuerpoRedes1">
+                <p>Si quieres una atencion personalizada contacta con uno de nuestros vendedores dejando tu nombre,
+                    tu correo electronico y los productos de los cuales quieres una cotizacion</p>
+                <form class="formulario">
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Escriba su nombre</mat-label>
+                        <input matInput required>
+                    </mat-form-field>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Escriba su consulta</mat-label>
+                        <textarea matInput></textarea>
+                    </mat-form-field>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>celular</mat-label>
+                        <span matPrefix>+591 &nbsp;</span>
+                        <input type="tel" matInput placeholder="764-690-24">
+                        <mat-icon matSuffix>smartphone</mat-icon>
+                    </mat-form-field>
+                </form>
+                <div class="cuerpRed1Boton">
+                    <button mat-raised-button >Enviar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="desarrollado">
+        <div class="contDesarrollador">
+            <h1>© All Rights Reserved | Design by </h1>
+            <p>ances-cali-lima@hotmail.com</p>
+        </div>
+    </div>
+</footer>
+
+
+

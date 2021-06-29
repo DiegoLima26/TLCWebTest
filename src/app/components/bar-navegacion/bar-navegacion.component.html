@@ -1,0 +1,45 @@
+<div>
+    <mat-card class="fotoCabeza">
+        <mat-card-content>
+            <h1>TLC Comunicaciones Bolivia</h1>
+        </mat-card-content>
+    </mat-card>
+</div>
+<mat-toolbar class="cabezaFija">
+    <mat-toolbar-row>
+        <img width="80" alt="Logo TLC" src="assets/Imagenes/logoTLC.png"/>
+        <span>TLC SRL</span>
+        <span class="espaciador"></span>
+        <div >
+            <button mat-raised-button (click)="mostrarPagina('pag-inicio')" class="botones">INICIO</button>
+            <button mat-raised-button (click)="mostrarPagina('pag-productos')" class="botones">PRODUCTOS</button>
+            <button mat-raised-button (click)="mostrarPagina('pag-servicios')" class="botones">SERVICIOS</button>
+            <button mat-raised-button (click)="mostrarPagina('pag-contactos')" class="botones">CONTACTOS</button>
+            <button mat-raised-button (click)="mostrarPagina('pag-acerca-de')" class="botones">ACERCA DE</button>
+        </div>
+        <span class="espaciador"></span>
+        <button mat-icon-button [matMenuTriggerFor]="menu">
+            <button mat-icon-button>
+                <mat-icon>fingerprint</mat-icon>
+            </button> 
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+                <mat-icon>more_vert</mat-icon>
+                Fibra Optica
+            </button>
+            <button mat-menu-item>
+                <mat-icon>more_vert</mat-icon>
+                Redes
+            </button>
+            <button mat-menu-item>
+                <mat-icon>more_vert</mat-icon>
+                Ferreteria
+            </button>
+            <button mat-menu-item>
+                <mat-icon>more_vert</mat-icon>
+                Cableado Estructurado
+            </button>
+        </mat-menu>
+    </mat-toolbar-row>
+</mat-toolbar>

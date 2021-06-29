@@ -1,0 +1,419 @@
+@font-face 
+{
+  font-family: "Helvetica-Rounded";
+  src: url(../../../fonts/Helvetica-Rounded.otf);
+}
+@font-face 
+{
+  font-family: "futura-light-bt";
+  src: url(../../../fonts/futura-light-bt.ttf);
+}
+/*----------------------- Clases del div principal (clasContactos) ---------------------*/
+.clasContactos
+{
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(250, 248, 245);
+}
+
+/*----------------------- Fin clases del div principal (clasContactos) -----------------*/
+
+
+/*----------------------- Clases del div (tituloTx) ---------------------*/
+.tituloTx
+{
+  margin: 0px;
+  background-color: rgb(250, 248, 245);
+  box-sizing: border-box;
+}
+.tituloTx > h1
+{
+  margin: 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  text-align:left;
+  color: rgb(5, 4, 85);
+  font-family: futura-light-bt;
+  font-size: 50px;
+  font-weight:700;
+  letter-spacing: 8px;
+}
+/*----------------------- Fin clases del div (tituloTx) -----------------*/
+
+
+/*----------------------- Clases del div (contCont) ---------------------*/
+.contCont
+{
+  margin: 0;
+  padding: 40px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 0.8fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+  background-color: rgb(250, 248, 245);
+
+}
+
+/*----------------------- Fin clases del div (contCont) -----------------*/
+
+/*----------------------- Clases del div (con1) ---------------------*/
+
+.con1
+{
+  margin:0px;
+  padding-top: 20px;
+  box-sizing: border-box;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+}
+
+.headerCon1
+{
+  width: 90%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  border-bottom: 1px solid rgb(5, 4, 85);
+}
+.headerCon1 > h1
+{
+  margin: 0;
+  color: rgb(5, 4, 85);
+  font-size: 30px;
+  font-weight: 700;
+  font-family: futura-light-bt;
+}
+.headerCon1 > p
+{
+  margin: 0;
+  color: rgb(97, 97, 100);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: futura-light-bt;
+}
+.bodyCon1
+{
+  width: 90%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+}
+.bodyCon1 > p
+{
+  margin: 0;
+  color: rgb(97, 97, 100);
+  font-size: 13px;
+  font-family: futura-light-bt;
+  line-height: 30px;
+}
+.bodyIcon
+{
+  box-sizing: border-box;
+  color: rgb(5, 4, 85);
+}
+
+/*----------------------- Fin clases del div (con1) -----------------*/
+
+/*----------------------- Clases del div (con2) ---------------------*/
+
+.con2
+{
+  margin: 0px auto;
+  padding: 0px 10px;
+  box-sizing: border-box;
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+  object-fit: none;
+}
+
+.con2C 
+{
+  margin: auto;
+  box-sizing: border-box;
+  padding: 5px; 
+  width: 100%;
+  height: 500px;
+}
+
+
+/*----------------------- Fin clases del div (con2) -----------------*/
+
+
+/*----------------------- Inicio estilos css para estilos responsivos ---------------------*/
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 0px y maximo de 400px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 400px) 
+{
+  /*----------------------- Clases del div (tituloTx) ---------------------*/
+  .tituloTx > h1
+  {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    font-size: 25px;
+    font-weight:700;
+    letter-spacing: 4px;
+  }
+  /*----------------------- Fin clases del div (tituloTx) -----------------*/
+  /*----------------------- Clases del div (contCont) ---------------------*/
+  .contCont
+  {
+    margin: 0px;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 248, 245);
+  }
+  /*----------------------- Fin clases del div (contCont) -----------------*/
+  /*----------------------- Clases del div (con1) ---------------------*/
+
+  .con1
+  {
+    margin:0px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+  }
+
+  .headerCon1
+  {
+    width: 90%;
+    padding: 5px;
+  }
+  .headerCon1 > h1
+  {
+    font-size: 22px;
+  }
+  .headerCon1 > p
+  {
+    font-size: 17px;
+    font-weight: 500;
+  }
+  .bodyCon1
+  {
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /*----------------------- Fin clases del div (con1) -----------------*/
+  /*----------------------- Clases del div (con2) ---------------------*/
+  .con2
+  {
+    margin: 0px auto;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    object-fit: none;
+  }
+  .con2C 
+  {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5px; 
+    width: 340px;
+    height: 340px;
+  }
+  /*----------------------- Fin clases del div (con2) -----------------*/    
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 0px y maximo de 400px!!!!!!!!!!!-------*/
+
+
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 401px y maximo de 767px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 767px) and (min-width: 401px)
+{
+  /*----------------------- Clases del div (tituloTx) ---------------------*/
+  .tituloTx > h1
+  {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 30px;
+    font-size: 35px;
+    font-weight:700;
+    letter-spacing: 6px;
+  }
+  /*----------------------- Fin clases del div (tituloTx) -----------------*/
+  /*----------------------- Clases del div (contCont) ---------------------*/
+  .contCont
+  {
+    margin: 0px;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 248, 245);
+  }
+  /*----------------------- Fin clases del div (contCont) -----------------*/
+  /*----------------------- Clases del div (con1) ---------------------*/
+  .con1
+  {
+    margin:0px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+  }
+  .headerCon1
+  {
+    width: 90%;
+    padding: 10px;
+  }
+  .headerCon1 > h1
+  {
+    font-size: 25px;
+  }
+  .headerCon1 > p
+  {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .bodyCon1
+  {
+    width: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  /*----------------------- Fin clases del div (con1) -----------------*/
+  /*----------------------- Clases del div (con2) ---------------------*/
+  .con2
+  {
+    margin: 0px auto;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    object-fit: none;
+  }
+  .con2C 
+  {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5px; 
+    width: 100%;
+    height: 450px;
+  }
+  /*----------------------- Fin clases del div (con2) -----------------*/
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 0px y maximo de 767px!!!!!!!!!!!-------*/
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 768px y maximo de 1000px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 1000px) and (min-width: 768px)
+{
+  /*----------------------- Clases del div (tituloTx) ---------------------*/
+  .tituloTx > h1
+  {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    font-size: 55px;
+    font-weight:700;
+    letter-spacing: 8px;
+  }
+  /*----------------------- Fin clases del div (tituloTx) -----------------*/
+  /*----------------------- Clases del div (contCont) ---------------------*/
+  .contCont
+  {
+    margin: 0px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(250, 248, 245);
+  }
+  /*----------------------- Fin clases del div (contCont) -----------------*/
+  /*----------------------- Clases del div (con1) ---------------------*/
+  .con1
+  {
+    margin:0px;
+    padding-top: 5px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+  }
+  .headerCon1
+  {
+    width: 90%;
+    padding: 20px;
+  }
+  .headerCon1 > h1
+  {
+    font-size: 35px;
+  }
+  .headerCon1 > p
+  {
+    font-size: 25px;
+    font-weight: 500;
+  }
+  .bodyCon1
+  {
+    width: 90%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  .bodyCon1 > p
+  {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  /*----------------------- Fin clases del div (con1) -----------------*/
+  /*----------------------- Clases del div (con2) ---------------------*/
+  .con2
+  {
+    margin: 0px auto;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+    object-fit: none;
+  }
+  .con2C 
+  {
+    margin: auto;
+    box-sizing: border-box;
+    padding: 5px; 
+    width: 100%;
+    height: 450px;
+  }
+  /*----------------------- Fin clases del div (con2) -----------------*/
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 768px y maximo de 1000px!!!!!!!!!!!-------*/
+
+/*----------------------- Fin estilos css para estilos responsivos ---------------------*/

@@ -1,0 +1,941 @@
+
+@font-face {
+  font-family: "Helvetica-Rounded";
+  src: url(../fonts/Helvetica-Rounded.otf);
+}
+@font-face {
+  font-family: "futura-light-bt";
+  src: url(../fonts/futura-light-bt.ttf);
+}
+@font-face {
+  font-family: "futura-Bk-BT";
+  src: url(../fonts/Futura-Bk-BT.ttf);
+}
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- INICIO CLASES DEL BANER LATERAL ------------!!!!!!!!!!!!!!!!!*/
+
+.banerLateral 
+{
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.slideBaner
+{
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.banerLateralListaU
+{
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  width: 600%;
+}
+.styleLista
+{
+  width: 100%;
+  list-style: none;
+}
+.imgLista
+{
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.centraT
+{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+}
+.banerLateral h1
+{
+  margin: 0px;
+  font-size: 50px;
+  font-family: futura-light-bt;
+  font-weight: 900;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+/*---------------------Clases para navegacion flechas--------------------------*/
+
+.botonDer
+{
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  padding-top: 8px;
+  align-items: center;
+  font-size: 35px;
+  text-align: center;
+  color: rgb(71, 0, 0);
+  background-color: rgba(245, 245, 245, 0.15);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.botonIz
+{
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  padding-top: 8px;
+  align-items: center;
+  font-size: 35px;
+  text-align: center;
+  color: rgb(71, 0, 0);
+  background-color: rgba(245,245,245,0.15);
+  border-radius: 100%;
+  cursor: pointer;
+}
+.botonDer:hover
+{
+  background-color: rgb(255,255,255);
+}
+.botonIz:hover
+{
+  background-color: rgb(255,255,255);
+}
+/*---------------------Fin clases para navegacion flechas----------------------*/
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- FIN CLASES DEL BANER LATERAL ------------!!!!!!!!!!!!!!!!!*/
+
+
+/*¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡------------- INICIO CLASES DEL MENU DE CABECERA FIJA------------!!!!!!!!!!!!!!!!!*/
+
+/*------------- Clases para el div principal () ------------------*/
+/* div existe solo para que el z-index sirva en el demas contenido*/
+.classCabFija
+{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/*------------- Fin clases para el div principal () ------------------*/
+
+/*------------- Clases para el componente nav (class = menuVertical) ------------------*/
+.menuVertical
+{
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: rgb(9,9,43);
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+/*------------- Fin clases para el componente nav (class = menuVertical) ------------------*/
+
+
+/*------------- Clases para el componente div (class = contMenuBtnResp) ------------------*/
+.contMenuBtnResp
+{
+  display: none;
+  justify-content: space-between;
+}
+.contMenuBtnResp button
+{
+  display: inline-block;
+  cursor: pointer;
+  font-size: 20px;
+  color: rgb(245,245,245);
+  padding: 5px 10px;
+  background: none;
+  border: 1px solid transparent;
+}
+.contMenuBtnResp button:hover
+{
+  border: 1px solid rgba(255, 255, 255, .4);
+}
+.inicioSesionResp
+{
+  display: none;
+}
+.inicioSesionResp > button
+{
+  display: flex;
+  padding: 7px;
+  align-items: center;
+}
+.inicioSesionResp > button > mat-icon
+{
+  display: flex;
+  padding: 0px;
+  align-items: center;
+}
+/*------------- Fin clases para el componente div (class = contMenuBtnResp) ------------------*/
+
+
+
+/*------------- Clases para el componente div (class = contBtnNavegacion) ------------------*/
+
+.contBtnNavegacion
+{
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img
+{
+  width: 80px;
+}
+.btnProductos 
+{
+  display: flex;
+  padding: 8px;
+  align-items: flex-end;
+  color: rgb(245,245,245);
+  border-radius: 10px;
+  border:1px solid transparent;
+}
+.btnProductos:hover
+{
+  border: 1px solid rgba(245, 124, 0, .4);
+}
+.btnProductos mat-icon
+{
+  margin-left: 15px;
+  position: relative;
+  bottom: 5px;
+  cursor: pointer;
+}
+.btnProductos > p
+{
+  margin: 0px;
+  font-size: 14px;
+  font-family: futura-light-bt;
+}
+.btnProductos span
+{
+  display: block;
+  font-size: 18px;
+  letter-spacing: 5px;
+  font-family: futura-light-bt;
+}
+.huella
+{
+  color: rgb(245, 124, 0);
+}
+.contBtnNavegacion .linkMenu
+{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  list-style: none;
+}
+.contBtnNavegacion .linkMenu li
+{
+  display: inline-block;
+}
+.contBtnNavegacion .linkMenu li a
+{
+  display: block;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border: 1px solid transparent;
+  text-decoration: none;
+  font-size: 13px;
+  font-family: futura-light-bt;
+}
+.contBtnNavegacion .linkMenu li a:hover
+{
+  border: 1px solid rgba(245, 124, 0, .4);
+}
+.contBtnNavegacion .inicioSesion
+{
+  box-sizing: border-box;
+  background-color: rgb(9,9,43);
+}
+.contBtnNavegacion .inicioSesion .btnMenuLogIn
+{
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  background-color: rgb(9,9,43);
+  cursor: pointer;
+}
+.contBtnNavegacion .inicioSesion .btnMenuLogIn:hover
+{
+  border: 1px solid rgba(245, 124, 0, .4);
+}
+/*------------- Fin clases para el componente div (class = contBtnNavegacion) ------------------*/
+
+
+/*------------- Clases para el componente div de menus y submenus (class = contSubMenuGrid) ------------------*/
+
+.contSubMenuGrid
+{
+  position: relative;
+}
+
+.contRejilla
+{
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  background-color: rgb(250, 248, 245);
+  display: none;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "categorias subcategorias subcategorias subcategorias";
+}
+.contRejilla.rejillaOn
+{
+  display: grid;
+}
+
+.contRejilla::before
+{
+  content: "";
+  display: block;
+  background: transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid rgb(250, 248, 245);
+  position: absolute;
+  top: -5px;
+  left: 265px;
+}
+
+.btnGridBack
+{
+  color:rgb(9,9,43);
+  background-color: rgb(245,245,245);
+  margin: auto;
+  align-items: center;
+  box-sizing: border-box;
+  display: none;
+  border: 1px solid transparent;
+}
+.btnGridBack:hover
+{
+  border: 1px solid rgb(245, 124, 0);
+}
+.btnGridBack mat-icon
+{
+  margin-right: 10px;
+}
+.tituloResp
+{
+  display: none;
+}
+.contRejilla .catGrid
+{
+  grid-area: categorias;
+  padding-top: 20px;
+  min-height: 300px;
+  box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.10);
+}
+.contRejilla .catGrid a
+{
+  color: rgb(5, 4, 85);
+  font-size: 14px;
+  font-family: futura-light-bt;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  cursor: default;
+}
+.contRejilla .catGrid a mat-icon
+{
+  display: none;
+}
+.huella1
+{
+  color: rgb(245, 124, 0);
+}
+.contRejilla .catGrid a:hover
+{
+  color: rgb(245, 124, 0);
+  font-weight: 900;
+}
+.contRejilla .catGrid .linkCatProd .huella1.flechaOn
+{
+  display: inline-block;
+}
+
+.contRejilla .subCatGrid
+{
+  grid-area: subcategorias;
+}
+.contRejilla .subCatGridItem
+{
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+
+}
+.contRejilla .subCatGridItem.subItemOn
+{
+  display: grid;  
+}
+.contRejilla .subCatGridItem img
+{
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+.contRejilla .linkSubCategoria
+{
+  padding-top: 10px;
+  max-height: 300px;
+  overflow: auto;
+}
+.contRejilla .linkSubCategoria a
+{
+  padding: 5px;
+  color: rgb(5, 4, 85);
+  display: block;
+  font-size: 14px;
+  font-family: futura-light-bt;
+  cursor: pointer;
+}
+.contRejilla .linkSubCategoria a:hover
+{
+  color: rgb(245, 124, 0);
+  font-size: 16px;
+  font-weight: 900;
+}
+.btnGridBackSub
+{
+  display: none;
+}
+.contRejilla .linkSubCategoria > h2
+{
+  margin: 0px;
+  padding: 5px;
+  color: rgb(245, 124, 0);
+  font-size: 16px;
+  font-family: futura-light-bt;
+  font-weight: 900;
+}
+.contRejilla .banerSubCategoria
+{
+  display: block;
+  width: 100%;
+}
+.contRejilla .galeriaSubCategoria
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-content:flex-start;
+}
+.contRejilla .galeriaSubCategoria a
+{
+  width: 50%;
+  height: 50%;
+}
+
+/*------------- Fin clases para el componente div de menus y submenus (class = contSubMenuGrid) ------------------*/
+
+/* ----------------------- Inicio estilos Css para el poup de LogIn ----------------------- */
+
+.contenedorLogIn
+{
+  margin: 0px auto;
+  width: 100%;
+  display: none;
+  box-sizing: border-box;
+  position: relative;
+  top: 0px;
+  align-items: center;
+  z-index: 10;
+}
+.contenedorLogIn.mostrarLogIn
+{
+  display: block;
+}
+.cuerpologIn
+{
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 5px 10px 20px 10px;
+  position: absolute;
+  width: 90%;
+  top: 0px;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.datosLogin
+{
+  margin: 0px auto;
+  box-sizing: border-box;
+  padding: 20px;
+  width: 300px;
+  height: 420px;
+  top: 0px;
+  left: calc(50% - 150px);
+  border-radius: 15px;
+  
+  background-color: rgb(250, 248, 245);
+}
+.datosLogin img
+{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: -40px;
+  left:calc(50% - 40px);
+  border-radius: 50%;
+}
+.tituloDatosLog
+{
+  text-align: center;
+  margin: 0px;
+  padding: 40px 15px 20px 15px;
+}
+.tituloDatosLog > h1
+{
+  font-size: 30px;
+  color: rgb(5, 4, 85);
+  font-family: futura-light-bt;
+  font-weight: 500;
+}
+.cuerpoDatosLog
+{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+.cuerpoDatosLog > h2
+{
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  font-size: 20px;
+  color: rgb(5, 4, 85);
+  font-family: futura-light-bt;
+  font-weight: 400;
+}
+.cuerpoDatosLog input
+{
+  margin: 2px 6px 10px 6px;
+  display: block;
+  border: none;
+  border-bottom: 1px solid rgb(245, 124, 0);
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  color: rgb(5, 4, 85);
+  font-family: futura-light-bt;
+  font-weight: 400;
+}
+.cuerpoDatosLog .botonInicio
+{
+  margin: 10px auto;
+  box-sizing: border-box;
+  padding: 5px;
+  width: 50%;
+  display: block;
+  text-align: center;
+  cursor:pointer;
+  color: rgb(245,245,245);
+  background-color: rgb(9,9,43);
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 18px;
+  font-family: futura-light-bt;
+  font-weight: 400;
+}
+.cuerpoDatosLog .botonInicio:hover
+{
+  border: 2px solid rgb(245, 124, 0);
+}
+.cuerpoDatosLog .linkOpc
+{
+  color: rgb(5, 4, 85);
+  font-size: 13px;
+  font-family: futura-light-bt;
+  font-weight: 400;
+  cursor: pointer;
+}
+.cuerpoDatosLog .linkOpc:hover
+{
+  color: rgb(245, 124, 0);
+  font-size: 15px;
+  font-weight: 900;
+}
+/* ------------------------ Fin estilos Css para el poup de LogIn ------------------------- */
+/*-------------¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡ COMIENZO CLASES COMPONENTE FOOTER !!!!!!!!!!!! ------------------*/
+
+/*-------------Clases para el componente Footer ------------------*/
+.classFooter
+{
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(21, 21, 21);
+}
+/*-------------Clases para el div (infFooter)   ------------------*/
+
+.infFooter
+{
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+/*-------------Clases para el div(infRedesS) dentro de infFooter ------------------*/
+
+.infRedesS
+{
+  margin: 0px;
+  box-sizing: border-box;
+}
+.cabezaRedes
+{
+  margin: 0px  auto;
+  width: 90%;
+}
+.cabezaRedes > h1
+{
+  margin: 0px;
+  color: rgb(245,245,245);
+  font-family:Helvetica-Rounded;
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom:1px solid rgb(204, 200, 194); 
+}
+.cuerpoRedes
+{
+  margin: 0px  auto;
+  box-sizing: border-box;
+  width: 90%;
+  padding-top: 20px;
+}
+.cuerpoRedes > p
+{
+  margin: 0px;
+  color: rgb(58,86,99);
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: futura-light-bt;
+}
+.clasBotones
+{
+  margin: 0px auto;
+  padding:220px 10px 10px 5px;
+  box-sizing: border-box;
+  text-align:center;
+} 
+.clasBotones > button
+{
+  margin: 0px;
+  padding: 5px 15px 5px 5px;
+  border: none;
+  display: inline-block;
+  background: none;
+}
+.clasBotones i
+{
+  color: rgb(245, 124, 0);
+}
+/*------------- Fin clases para el div(infRedesS)  ------------------*/
+
+/*-------------Clases para el div(infDir) dentro de infFooter ------------------*/
+
+.infDir
+{
+  margin: 0px;
+}
+.cuerpoRedes > h2
+{
+  color: rgba(245, 124, 0,.8);
+  font-size: 15px;
+  margin: 0px;
+  font-family: futura-light-bt;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+/*------------- Fin clases para el div(infDir)  ------------------*/
+
+/*-------------Clases para el div(infCot) dentro de infFooter ------------------*/
+
+.infCot
+{
+  margin: 0px;
+  color: rgb(58,86,99);
+}
+.cuerpoRedes1
+{
+  margin: 0px  auto;
+  width: 90%;
+  padding-top: 20px;
+}
+.cuerpRed1Boton
+{
+  margin: 0px;
+  padding: 15px 15px 15px 0px;
+}
+.cuerpRed1Boton button
+{
+  background-color: rgb(245,245,245);
+  color: rgb(21,21,21);
+}
+.formulario mat-form-field
+{
+  color: rgb(245, 124, 0);
+  border-bottom: 1px solid rgb(58,86,99);
+  display: block;
+}
+.formulario mat-form-field mat-label
+{
+  color:rgb(58,86,99)
+}
+/*------------- Fin clases para el div(infCot)  ------------------*/
+
+/*------------- Fin clases para el div(infFooter)  ------------------*/
+
+/*------------- Clases para el div(desarrollado) ------------------*/
+
+.desarrollado
+{
+  margin: 0px auto;
+  width: 90%;
+  padding: 30px;
+  text-align: center;
+  border-top: 1px solid rgb(58,86,99);
+}
+.contDesarrollador
+{
+  margin: 0px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+.contDesarrollador > h1
+{
+  margin: 0px;
+  padding: 0px 5px;
+  border: 0px;
+  display: inline-block;
+  font-size: 15px;
+  font-family: futura-light-bt;
+  color: rgb(58,86,99);
+}
+.contDesarrollador > p
+{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  display: inline-block;
+  font-size: 15px;
+  font-family: futura-light-bt;
+  color: rgb(245, 124, 0);
+}
+/*------------- Fin clases para el div(desarrollado) ------------------*/
+
+/*------------- Fin clases para el componente Footer ------------------*/
+/*------------- FIN CLASES COMPONENTE FOOTER ------------------*/
+
+.mainclass
+{
+  margin: 0;
+  width: 100%;
+}
+
+/*------- ¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 0px y maximo de 768px!!!!!!!!!!! -------*/
+
+
+@media only screen and (max-width: 767px)
+{
+  /* Estilos Css para el baner lateral*/
+  .centraT h1
+  {
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
+  .infFooter
+  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 15px;
+  }
+  .infCot
+  {
+    margin: 0px;
+    color: rgb(58,86,99);
+  }
+  /* Fin estilos Css para el baner lateral*/
+
+  /* Estilos Css para el menu */
+  .contMenuBtnResp
+  {
+    display: flex;
+  }
+  .inicioSesionResp
+  {
+    display: block;
+  }
+  .contBtnNavegacion
+  {
+    box-sizing: border-box;
+    position: absolute;
+    top: 60px;
+    left: -5px;
+    bottom: -35em;
+    flex-direction:column;
+    align-items: flex-start;
+    padding: 10px 10px;
+    justify-content: flex-start;
+    background-color: rgb(9,9,43);
+    width: 70%;
+    transition: .3s ease all;   
+    transform: translate(-100%);
+    z-index: 2;
+  }
+  .contBtnNavegacion .inicioSesion
+  {
+    display: none;
+  }
+  .contBtnNavegacion.menuRespOn
+  {
+    transform: translate(0%);
+  }
+  .btnProductos
+  {
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    cursor:pointer;
+  }
+  .btnProductos mat-icon
+  {
+    position: static;
+    transform: rotate(-90deg);
+  }
+  .linkMenu
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .linkMenu li a
+  {
+    display: block;
+    margin: 5px 0px;
+
+  }
+  /* Estilos Css para el subMenu*/
+  .contSubMenuGrid
+  {
+    z-index: 3;
+  }
+  .contRejilla
+  {
+    display: flex;
+    flex-direction: column;
+    transition: .3s ease all;
+    transform: translateX(-100%);
+    width: 70%;
+    left: -10px;
+    bottom: -35em;
+    
+  }
+  .contRejilla.actResp
+  {
+    transform: translateX(0%);
+  }
+  .contRejilla::before
+  {
+    display: none;
+  }
+  .contRejilla .catGrid
+  {
+    display: block;
+    background-color: rgb(250, 248, 245);
+  }
+  .contRejilla .subCatGrid
+  {
+    display: block;
+    position: absolute;
+    top: 0px;
+    background-color: rgb(250, 248, 245);
+  } 
+  .btnGridBack
+  {
+    display: inline-block;
+    cursor: pointer;
+  }
+  .tituloResp
+  {
+    display: block;
+  }
+  .contRejilla .subCatGrid .subCatGridItem
+  {
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+  }
+  .btnGridBackSub
+  {
+    display: block;
+  }
+  .contRejilla .subCatGrid .subCatGridItem .linkSubCategoria
+  {
+    grid-column: 1/3;
+  }
+  .contRejilla .subCatGrid .subCatGridItem.subItemOn
+  {
+    display:grid;
+  }
+  /* Fin estilos Css para el menu */
+}
+
+
+
+/*------- ¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 0px y maximo de 768px!!!!!!!!!!! -------*/
+
+
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 768px y maximo de 979px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 979px) and (min-width: 768px)
+{
+  .infFooter
+  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  .infCot
+  {
+    margin: 0px;
+    grid-column: 1/3;
+    color: rgb(58,86,99);
+  }
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 768px y maximo de 979px!!!!!!!!!!!-------*/
+
+
+

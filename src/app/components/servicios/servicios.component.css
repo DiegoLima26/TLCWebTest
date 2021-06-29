@@ -1,0 +1,387 @@
+
+@font-face 
+{
+    font-family: "Helvetica-Rounded";
+    src: url(../../../fonts/Helvetica-Rounded.otf);
+}
+@font-face 
+{
+    font-family: "futura-light-bt";
+    src: url(../../../fonts/futura-light-bt.ttf);
+}
+
+/*----------------------- Clases del div principal (clasServicios) ---------------------*/
+.clasServicios
+{
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(250, 248, 245);
+}
+
+/*----------------------- Fin clases del div principal (clasServicios) -----------------*/
+
+
+/*----------------------- Clases del div (serviciosTxt) ---------------------*/
+
+.serviciosTxt
+{
+    margin: 0;
+    background-color: rgb(250, 248, 245);
+    box-sizing: border-box;
+}
+.serviciosTxt > h1
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    text-align:left;
+    color: rgb(5, 4, 85);
+    font-family: futura-light-bt;
+    font-size: 50px;
+    font-weight:700;
+    letter-spacing: 8px;
+}
+
+/*----------------------- Fin clases del div (serviciosTxt) -----------------*/
+
+/*----------------------- Clases del div (servGrid) ---------------------*/
+.servGrid
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    background-color: rgb(250, 248, 245);
+
+}
+
+/*----------------------- Fin clases del div (servGrid) -----------------*/
+
+/*----------------------- Clases del div (con1) ---------------------*/
+
+.grillaSer
+{
+    margin: 0px;
+    box-sizing: border-box;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grillaBloq1
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+.cabeceraSer
+{
+    margin: 0 auto;
+    width: 80%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabeceraSer > h1
+{
+    margin: 0;
+    color: rgb(5, 4, 85);
+    font-family: futura-light-bt;
+    font-size: 25px;
+    border-bottom: 2px solid rgb(5, 4, 85);
+}
+.cuerpoSer
+{
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+.cuerpoSer > p
+{
+    margin: 0px;
+    padding-top: 15px;
+    color: rgb(97, 97, 100);
+    font-family: futura-light-bt;
+    font-size: 15px;
+    text-align: left;
+}
+.grillaBloq2
+{
+    margin: 0;
+    box-sizing: border-box;
+}
+.grillaBloq2 img
+{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/*----------------------- Fin clases del div (con1) -----------------*/
+
+
+/*----------------------- Inicio estilos css para estilos responsivos ---------------------*/
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 0px y maximo de 400px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 400px) 
+{
+    /*----------------------- Clases del div (serviciosTxt) ---------------------*/
+    .serviciosTxt > h1
+    {
+        margin: 0px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        text-align:left;
+        color: rgb(5, 4, 85);
+        font-family: futura-light-bt;
+        font-size: 25px;
+        font-weight:700;
+        letter-spacing: 2px;
+    }
+    /*----------------------- Fin clases del div (serviciosTxt) -----------------*/
+    /*----------------------- Clases del div (servGrid) ---------------------*/
+    .servGrid
+    {
+        margin: 0;
+        box-sizing: border-box;
+        padding: 5px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 10px;
+        background-color: rgb(250, 248, 245);
+
+    }
+    /*----------------------- Fin clases del div (servGrid) -----------------*/
+    /*----------------------- Clases del div (grillaSer) ---------------------*/
+    .grillaSer
+    {
+        margin: 0px;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: rgb(245, 245, 245);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    /*----------------------- Fin clases del div (grillaSer) -----------------*/
+    /*----------------------- Clases del div (grillaBloq1) ---------------------*/
+    .cuerpoSer > p
+    {
+        padding-bottom: 15px;
+    }
+    /*----------------------- Fin clases del div (grillaBloq1) -----------------*/
+    /*----------------------- Clases del div (grillaBloq2) ---------------------*/
+    
+    .grillaBloq2
+    {
+        margin: 0 auto;
+        width: 80%;
+        box-sizing: border-box;
+    }
+    .grillaBloq2 img
+    {
+        margin: 0px auto;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    /*----------------------- Fin clases del div (grillaBloq2) -----------------*/
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 0px y maximo de 400px!!!!!!!!!!!-------*/
+
+
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 401px y maximo de 767px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 767px) and (min-width: 401px)
+{
+  /*----------------------- Clases del div (serviciosTxt) ---------------------*/
+  .serviciosTxt > h1
+  {
+    margin: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    text-align:left;
+    color: rgb(5, 4, 85);
+    font-family: futura-light-bt;
+    font-size: 35px;
+    font-weight:700;
+    letter-spacing: 2px;
+    line-height: 40px;
+  }
+    /*----------------------- Clases del div (servGrid) ---------------------*/
+  .servGrid
+  {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-gap: 5px;
+  }
+  /*----------------------- Fin clases del div (servGrid) -----------------*/
+  /*----------------------- Clases del div (grillaSer) ---------------------*/
+  .grillaSer
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  /*----------------------- Fin clases del div (grillaSer) -----------------*/
+  /*----------------------- Clases del div (grillaBloq1) ---------------------*/
+    .grillaBloq1
+    {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .cabeceraSer
+    {
+        margin: 0 auto;
+        width: 85%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cabeceraSer > h1
+    {
+        margin: 0;
+        padding-top: 15px;
+        color: rgb(5, 4, 85);
+        font-family: futura-light-bt;
+        font-size: 30px;
+        border-bottom: 2px solid rgb(5, 4, 85);
+    }
+    .cuerpoSer
+    {
+        width: 85%;
+    }
+    .cuerpoSer > p
+    {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+  /*----------------------- Fin clases del div (grillaBloq1) -----------------*/
+  /*----------------------- Inicio clases del div (grillaBloq2) -----------------*/
+    .grillaBloq2
+    {
+        margin: 0 auto;
+        width: 85%;
+        box-sizing: border-box;
+    }
+    .grillaBloq2 img
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    /*----------------------- Fin clases del div (grillaBloq2) -----------------*/
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 0px y maximo de 767px!!!!!!!!!!!-------*/
+
+
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Codigo para pantallas como minimo de 768px y maximo de 979px!!!!!!!!!!!-------*/
+
+@media only screen and (max-width: 1120px) and (min-width: 768px)
+{
+  /*----------------------- Clases del div (serviciosTxt) ---------------------*/
+  .serviciosTxt > h1
+  {
+    margin: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 35px;
+    text-align:left;
+    color: rgb(5, 4, 85);
+    font-family: futura-light-bt;
+    font-size: 45px;
+    font-weight:700;
+    letter-spacing: 2px;
+    line-height: 50px;
+  }
+    /*----------------------- Clases del div (servGrid) ---------------------*/
+  .servGrid
+  {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    grid-gap: 5px;
+  }
+  /*----------------------- Fin clases del div (servGrid) -----------------*/
+  /*----------------------- Clases del div (grillaSer) ---------------------*/
+  .grillaSer
+  {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+  }
+  /*----------------------- Fin clases del div (grillaSer) -----------------*/
+  /*----------------------- Clases del div (grillaBloq1) ---------------------*/
+    .grillaBloq1
+    {
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .cabeceraSer
+    {
+        margin: 0 auto;
+        width: 90%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cabeceraSer > h1
+    {
+        margin: 0;
+        padding-top: 15px;
+        color: rgb(5, 4, 85);
+        font-family: futura-light-bt;
+        font-size: 30px;
+        border-bottom: 2px solid rgb(5, 4, 85);
+    }
+    .cuerpoSer
+    {
+        width: 90%;
+    }
+    .cuerpoSer > p
+    {
+        padding-bottom: 15px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+  /*----------------------- Fin clases del div (grillaBloq1) -----------------*/
+  /*----------------------- Inicio clases del div (grillaBloq2) -----------------*/
+    .grillaBloq2
+    {
+        margin: 0 auto;
+        width: 90%;
+        box-sizing: border-box;
+    }
+    .grillaBloq2 img
+    {
+        width: 100%;
+        height: 100%;
+        margin: 0px auto;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    /*----------------------- Fin clases del div (grillaBloq2) -----------------*/
+}
+
+/*-----¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡Fin codigo para pantallas como minimo de 768px y maximo de 979px!!!!!!!!!!!-------*/
+
+/*----------------------- Fin estilos css para estilos responsivos ---------------------*/
